@@ -1,0 +1,20 @@
+{
+  "name": "issue-with-db-ts",
+  "private": true,
+  "scripts": {
+    "dev": "wattpm dev",
+    "build": "wattpm build",
+    "start": "wattpm start",
+    "docker:build": "npm run build && cd web/db && npm run build",
+    "docker:start": "node web/db/dist/index.js"
+  },
+  "dependencies": {
+    "@platformatic/db": "^2.5.5",
+    "@platformatic/runtime": "^2.5.5",
+    "@types/node": "^22.7.6",
+    "wattpm": "^2.5.5"
+  },
+  "workspaces": [
+    "web/*"
+  ]
+}

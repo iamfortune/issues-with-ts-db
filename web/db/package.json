@@ -1,0 +1,22 @@
+{
+  "name": "db",
+  "scripts": {
+    "start": "platformatic start",
+    "test": "borp",
+    "clean": "rm -fr ./dist",
+    "build": "platformatic compile",
+    "dev": "platformatic start --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.12",
+    "borp": "^0.17.0",
+    "fastify": "^5.0.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@platformatic/db": "^2.5.5"
+  },
+  "engines": {
+    "node": "^18.8.0 || >=20.6.0"
+  }
+}

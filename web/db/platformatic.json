@@ -19,7 +19,7 @@
   "plugins": {
     "paths": [
       {
-        "path": "./web/db/plugins",
+        "path": "./plugins",
         "encapsulate": false
       },
       {

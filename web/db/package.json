@@ -4,8 +4,7 @@
     "start": "platformatic start",
     "test": "borp",
     "clean": "rm -fr ./dist",
-    "build": "platformatic compile",
-    "dev": "platformatic start --watch"
+    "build": "platformatic compile"
   },
   "devDependencies": {
     "@types/node": "^20.16.12",

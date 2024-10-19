@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3042:3042"
+    environment:
+      PORT: 3042
+      PLT_DB_TYPESCRIPT: true
+      PLT_DB_DATABASE_URL: ${PLT_DB_DATABASE_URL}
+      PLT_DB_APPLY_MIGRATIONS: true
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev

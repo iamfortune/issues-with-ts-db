@@ -4,9 +4,7 @@
   "scripts": {
     "dev": "wattpm dev",
     "build": "wattpm build",
-    "start": "wattpm start",
-    "docker:build": "npm run build && cd web/db && npm run build",
-    "docker:start": "node web/db/dist/index.js"
+    "start": "wattpm start"
   },
   "dependencies": {
     "@platformatic/db": "^2.5.5",
